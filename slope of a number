@@ -1,0 +1,54 @@
+slope of a number:  what I define slope of a number is  sum of total no. of  minimas and maximas of a number ...
+you might be wondering  how can a number has slope, as we have studied, only lines have slope     I want you to forget about those slopes whatever you know 
+so now let's come back to topic  
+as we discussed  for slopes we need total no. of minimas and maximas
+      now you may have question what is minima and maxima of a number
+so let's discuss:
+            take an n digits number , now what you do is take ith digit of that number 
+                    if that ith digit is greater than i-1 th digit and i+1th digit, then that ith digit is called as maxima
+                    similarly if that ith digit is less than i-1 th digit and i+1th digit, then that ith digit is called as maxima
+                    and if some of the the digits doesn't have it's either neighbour (right neighbourhood or left neighbourhod) then that digit is neither maxima nor minima   
+            so how many of the digits is maxima and how many is minima    count the no. of it and sum it  result is your slopes...
+for example :
+take a number   let's say 1214
+1214  has digits   
+1   2  1  4
+              
+              let's take first digit i.e; 1  
+                                          it doesn't have left neighbour  so ignore it or understand it as it is neither maxima and nor minima
+              now take second digit  i.e; 2 
+                                          left neighbour is 1  and right neighbour is 1   as 2>1 and 2>1     2 is our maxima    so we got one maxima
+              if you see the next 1    
+                                        1<2 and 1<4   so 1 is our minima    so we have one minima    
+              for 4   
+                      again we need to ignore it because it doesn't have right neighbourhood   so consider this also as it is  neither maxima nor minima
+so we have total 1 minima and 1 maxima 
+so slope of 1214 is 1+1=2
+
+for 1220
+        we have 1 2 2 0
+        for 1
+              neither maxima nor minima
+        for 2 
+              2>1 and 2=2   
+              neither maxima nor minima  (it has to be either greater than or smaller than  not even equal to)
+        for 2
+              2=2 2>0  
+              neither maxima nor minima 
+        for 0   
+              obv neither maxima nor minima
+
+
+
+so for this concept we are going to write a code 
+first code will be:
+          write a c program to find out the slope of a number 
+          input: an integer number    can be upto 6 digits
+          output: an integer representing slope of that number
+
+second code will be :
+          write a c program to find out the sum of the slopes of the number betwenn the ranges including those two numbere
+          input: 2 integers  (first one should be less than second one)
+          output: sum od the slopes of all the numbers
+
+          
