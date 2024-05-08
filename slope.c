@@ -13,7 +13,7 @@ int slope(int a)
     int min=0;
     int max=0;
     int sum;
-    for(int i=1;i<len;i++)
+    for(int i=1;i<len-1;i++)
     {
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
             max++;
